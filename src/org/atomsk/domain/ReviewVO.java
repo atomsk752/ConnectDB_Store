@@ -10,6 +10,17 @@ public class ReviewVO {
     private Date reviewDate;
     private String cmt;
 
+    @Override
+    public String toString() {
+        return "ReviewVO{" +
+                "rno=" + rno +
+                ", mno=" + mno +
+                ", mid='" + mid + '\'' +
+                ", score=" + score +
+                ", reviewDate=" + reviewDate +
+                ", cmt='" + cmt + '\'' +
+                '}';
+    }
 
     public int getRno() {
         return rno;

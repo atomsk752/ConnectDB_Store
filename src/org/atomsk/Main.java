@@ -1,12 +1,15 @@
 package org.atomsk;
 
+import org.atomsk.domain.ReviewVO;
 import org.atomsk.domain.StoreVO;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        new StoreDAO().getAll().stream().forEach(vo -> System.out.println(vo.getImg()));
+//        new StoreDAO().getAll().stream().forEach(vo -> System.out.println(vo.getImg()));
+        new ReviewDAO().getReviews(6).stream().forEach(r-> System.out.println(r));
+        new ReviewDAO().getScores(6).stream().forEach(s-> System.out.println(s));
 
 //        ReviewVO vo = new ReviewVO();
 //        vo.setMid("atomsk");

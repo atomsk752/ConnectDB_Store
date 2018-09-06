@@ -26,10 +26,10 @@ public class MenuDAO {
 
         try {
             Class.forName("oracle.jdbc.OracleDriver");
-            con = DriverManager.getConnection("jdbc:oracle:thin:@10.10.10.95:1521:XE", "zz", "12345678");
+            con = DriverManager.getConnection("jdbc:oracle:thin:@10.10.10.91:1521:XE", "zerock", "12345678");
             System.out.println(con);
             stmt = con.prepareStatement(sql);
-            stmt.setInt(1, sno);
+            stmt.setInt(1, sno); //첫번째 물음표에 sno가 들어감
             rs = stmt.executeQuery();
 
             while(rs.next()) {
@@ -47,7 +47,7 @@ public class MenuDAO {
                 try {
                     rs.close();
                 } catch (Exception var23) {
-                    ;
+
                 }
             }
 

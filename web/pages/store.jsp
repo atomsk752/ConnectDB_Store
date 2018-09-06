@@ -542,8 +542,8 @@
                         <span class="info-box-icon bg-aqua"><img src="../simg/<%=vo.getImg()%>" class="storeimg"></span>
                         <%--<img src="../simg/s4.JPG" class="storeimg">--%>
                         <div class="info-box-content">
-                            <span class="info-box-text">가게이름 </span>
-                            <span class="info-box-number"><a href="store_detail.jsp?sno=<%=vo.getSno()%>"> <%=vo.getSname()%></a></span>
+                            <span class="info-box-text"><a href="store_detail.jsp?sno=<%=vo.getSno()%>">리뷰쓰기</a> </span>
+                            <span class="info-box-number"><a href="store_review.jsp?sno=<%=vo.getSno()%>"> <%=vo.getSname()%></a></span>
                         </div>
                         <!-- /.info-box-content -->
                     </div>

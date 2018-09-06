@@ -22,8 +22,8 @@ public class StoreDAO {
         try {
             Class.forName("oracle.jdbc.OracleDriver");
             con = DriverManager.getConnection(
-                    "jdbc:oracle:thin:@10.10.10.95:1521:XE",
-                    "zz",
+                    "jdbc:oracle:thin:@10.10.10.91:1521:XE",
+                    "zerock",
                     "12345678");
             System.out.println(con);
             stmt = con.prepareStatement(sql);
